@@ -1,0 +1,52 @@
+﻿@model IEnumerable<BidWeb.Models.Employee>
+
+<h1>Employees</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.firstname)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.surname)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.gender)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ip)
+        </dt>
+    </dl>
+    @foreach (var item in Model)
+    {
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayFor(model => item.id)
+            </dt>
+            <dt class="col-sm-2">
+                @Html.DisplayFor(model => item.firstname)
+            </dt>
+            <dt class="col-sm-2">
+                @Html.DisplayFor(model => item.surname)
+            </dt>
+            <dt class="col-sm-2">
+                @Html.DisplayFor(model => item.email)
+            </dt>
+            <dt class="col-sm-2">
+                @Html.DisplayFor(model => item.gender)
+            </dt>
+            <dt class="col-sm-2">
+                @Html.DisplayFor(model => item.ip)
+            </dt>
+        </dl>
+    }
+    </div>
+
+
